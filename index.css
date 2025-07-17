@@ -1,0 +1,40 @@
+body {
+    width: 98.85%;
+    height: 98vh;
+    background-color: #0d1c26;
+    display: flex;
+
+}
+
+h1 {
+    font-family: 'inter', sans-serif;
+    font-size: 150px;
+    font-weight: 800;
+    color: #d9e8f2;
+    margin: 0;
+}
+
+p {
+    font-family: 'inter', sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    color: #d9e8f2;
+    margin: 0;
+}
+
+#top_display {
+    font-size: 125px;
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 300px;
+}
+
+.display {
+    width: 1583px;
+}
