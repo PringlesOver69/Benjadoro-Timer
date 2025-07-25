@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/navbar.css" />
     <link rel="stylesheet" href="styles/general.css" />
     <link rel="stylesheet" href="styles/background.css" />
+    <link rel="stylesheet" href="styles/popups.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,7 +18,7 @@
   <body>
     <div class="background-image-container">
       <div class="navbar">
-        <div class="navbar-link">
+        <div class="navbar-link" onclick="imagePickerToggle()">
           <img src="icons/picture-icon.png" alt="" />
           <div>Image Picker</div>
         </div>
@@ -34,6 +35,87 @@
           <div>Settings</div>
         </div>
       </div>
+      <div class="popups">
+        <div class="popup-image-picker" id="background-options">
+          <label>
+            <input
+              id="big-cat-background"
+              type="radio"
+              name="image-choice"
+              value="images/big-background/cat_silhouette_overlooking_cityscape_night.jpg"
+              checked
+            />
+            <img
+              loading="lazy"
+              src="images/small-background/cat-silhouette-overlooking-cityscape-night.png"
+            />
+          </label>
+          <label>
+            <input
+              id="big-sunset-background"
+              type="radio"
+              name="image-choice"
+              value="images/big-background/sunset-7790623_1920.jpg"
+            />
+            <img
+              loading="lazy"
+              src="images/small-background/sunset-7790623_1920 (1).jpg"
+            />
+          </label>
+          <label>
+            <input
+              id="big-cartoon-lofi-background"
+              type="radio"
+              name="image-choice"
+              value="images/big-background/cartoon-lofi-young-manga-style-girl-studying-while-listening-music-raining-street-ai-generative.jpg"
+            />
+            <img
+              loading="lazy"
+              src="images/small-background/cartoon-lofi-young-manga-style-girl-studying-while-listening-music-raining-street-ai-generative (1).jpg"
+            />
+          </label>
+          <label>
+            <input
+              id="big-office-background"
+              type="radio"
+              name="image-choice"
+              value="images/big-background/beautiful-office-space-cartoon-style.jpg"
+            />
+            <img
+              loading="lazy"
+              src="images/small-background/beautiful-office-space-cartoon-style (1).jpg"
+            />
+          </label>
+          <label>
+            <input
+              id="big-ai-generated-background"
+              type="radio"
+              name="image-choice"
+              value="images/big-background/ai-generated-8205363_1920.jpg"
+            />
+            <img
+              loading="lazy"
+              src="images/small-background/ai-generated-8205363_1920 (1).jpg"
+            />
+          </label>
+          <label>
+            <input
+              id="big-sunset-from-room-background"
+              type="radio"
+              name="image-choice"
+              value="images/big-background/3d-view-sun-sky-from-room.jpg"
+            />
+            <img
+              loading="lazy"
+              src="images/small-background/3d-view-sun-sky-from-room (1).jpg"
+            />
+          </label>
+        </div>
+        <div class="popup-ambient-noise"></div>
+        <div class="popup-colour-picker"></div>
+        <div class="popup-settings"></div>
+      </div>
     </div>
+    <script src="popups.js"></script>
   </body>
 </html>
