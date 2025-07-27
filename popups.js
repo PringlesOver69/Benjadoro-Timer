@@ -17,3 +17,10 @@ radioButtons.forEach((radio) => {
 function imagePickerToggle() {
     imagePickerButton.style.visibility = imagePickerButton.style.visibility === 'hidden'? 'visible' : 'hidden';
 }
+
+// Sound picker popup and functionality
+const soundPickerButton = document.getElementById('sound-options');
+
+function soundPickerToggle() {
+    soundPickerButton.style.visibility = soundPickerButton.style.visibility === 'hidden'? 'visible' : 'hidden';
+}

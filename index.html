@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Benjadoro Timer</title>
+    <title>Benjadoro Timer | Study Efficiently</title>
   </head>
   <body>
     <div class="background-image-container">
@@ -22,9 +22,13 @@
           <img src="icons/picture-icon.png" alt="" />
           <div>Image Picker</div>
         </div>
-        <div class="navbar-link" id="ambient-sound-container">
+        <div
+          class="navbar-link"
+          id="ambient-sound-container"
+          onclick="soundPickerToggle()"
+        >
           <img src="icons/sound-icon.png" alt="" id="ambient-sound-icon" />
-          <div>Ambient Noise</div>
+          <div>Sound</div>
         </div>
         <div class="navbar-link">
           <img src="icons/color-picker-icon.png" alt="" />
@@ -111,7 +115,52 @@
             />
           </label>
         </div>
-        <div class="popup-ambient-noise"></div>
+        <div class="popup-ambient-noise" id="sound-options">
+          <div class="audio-container">
+            <audio
+              src="audio/Jomon Grove - The Mini Vandals.mp3"
+              controls
+              loop
+            ></audio>
+            <p>Jomon Grove</p>
+          </div>
+          <div class="audio-container">
+            <audio
+              src="audio/Long Goodbyes to Longer Friends - Schwartzy.mp3"
+              controls
+              loop
+            ></audio>
+            <p>Long Goodbyes</p>
+          </div>
+          <div class="audio-container">
+            <audio src="audio/Tiburtina - Schwartzy.mp3" controls></audio>
+            <p>Tiburtina</p>
+          </div>
+          <div class="audio-container">
+            <audio
+              src="audio/Sleep Music No. 1 - Chris Haugen.mp3"
+              controls
+              loop
+            ></audio>
+            <p>Sleep Music Nr.1</p>
+          </div>
+          <div class="audio-container">
+            <audio
+              src="audio/Pienso Viento - Casa Rosa.mp3"
+              controls
+              loop
+            ></audio>
+            <p>Pienso Viente</p>
+          </div>
+          <div class="audio-container">
+            <audio
+              src="audio/Guera Encantadora - Casa Rosa.mp3"
+              controls
+              loop
+            ></audio>
+            <p>Guera Encantadora</p>
+          </div>
+        </div>
         <div class="popup-colour-picker"></div>
         <div class="popup-settings"></div>
       </div>
