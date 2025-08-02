@@ -16,7 +16,9 @@
     <title>Benjadoro Timer | Study Efficiently</title>
   </head>
   <body>
+    <!-- Bakgrunnsbilde -->
     <div class="background-image-container">
+      <!-- Navigasjonsbar med alle popups -->
       <div class="navbar">
         <div class="navbar-link" onclick="imagePickerToggle()">
           <img src="icons/picture-icon.png" alt="" />
@@ -30,15 +32,21 @@
           <img src="icons/sound-icon.png" alt="" id="ambient-sound-icon" />
           <div>Sound</div>
         </div>
-        <div class="navbar-link">
+        <div
+          class="navbar-link"
+          id="color-button"
+          onclick="colorPickerToggle()"
+        >
           <img src="icons/color-picker-icon.png" alt="" />
-          <div>Colour Picker</div>
+          <div>Color Picker</div>
         </div>
         <div class="navbar-link" id="settings-button">
           <img src="icons/settings-icon.png" alt="" />
           <div>Settings</div>
         </div>
       </div>
+
+      <!-- Popup-vinduer -->
       <div class="popups">
         <div class="popup-image-picker" id="background-options">
           <label>
@@ -161,7 +169,57 @@
             <p>Guera Encantadora</p>
           </div>
         </div>
-        <div class="popup-colour-picker"></div>
+        <div class="popup-color-picker" id="color-options">
+          <label>
+            <input
+              name="color-choice"
+              type="radio"
+              value="rgb(0, 0, 85)"
+              data-shadow="navy"
+              checked
+            />
+            <div class="color-1"></div> </label
+          ><label>
+            <input
+              name="color-choice"
+              type="radio"
+              value="#db5e7b"
+              data-shadow="#a61637"
+            />
+            <div class="color-2"></div> </label
+          ><label>
+            <input
+              name="color-choice"
+              type="radio"
+              value="#25544c"
+              data-shadow="#0d2e28"
+            />
+            <div class="color-3"></div> </label
+          ><label>
+            <input
+              name="color-choice"
+              type="radio"
+              value="#ff8f3f"
+              data-shadow="#a34d0f" />
+            <div class="color-4"></div></label
+          ><label>
+            <input
+              name="color-choice"
+              type="radio"
+              value="#2d6e2a"
+              data-shadow="#173b16"
+            />
+            <div class="color-5"></div> </label
+          ><label>
+            <input
+              name="color-choice"
+              type="radio"
+              value="#b95946"
+              data-shadow="#732b1d"
+            />
+            <div class="color-6"></div>
+          </label>
+        </div>
         <div class="popup-settings"></div>
       </div>
     </div>
