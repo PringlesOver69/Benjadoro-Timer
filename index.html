@@ -40,7 +40,11 @@
           <img src="icons/color-picker-icon.png" alt="" />
           <div>Color Picker</div>
         </div>
-        <div class="navbar-link" id="settings-button">
+        <div
+          class="navbar-link"
+          id="settings-button"
+          onclick="settingsButtonToggle()"
+        >
           <img src="icons/settings-icon.png" alt="" />
           <div>Settings</div>
         </div>
@@ -220,7 +224,48 @@
             <div class="color-6"></div>
           </label>
         </div>
-        <div class="popup-settings"></div>
+        <div class="popup-settings">
+          <div class="timer-setting">
+            <p>Timer</p>
+            <div class="buttons-and-timer-container">
+              <div class="buttons-container">
+                <button>&#8743;</button>
+                <button>&#8744;</button>
+              </div>
+              <div class="timer-container">
+                <p>25:00</p>
+              </div>
+            </div>
+          </div>
+          <div class="break-setting">
+            <p>Break</p>
+            <div class="buttons-and-timer-container">
+              <div class="buttons-container">
+                <button>&#8743;</button>
+                <button>&#8744;</button>
+              </div>
+              <div class="break-container">
+                <p>05:00</p>
+              </div>
+            </div>
+          </div>
+          <div class="sessions-setting">
+            <p>Sessions</p>
+            <div class="buttons-and-timer-container">
+              <div class="buttons-container">
+                <button>&#8743;</button>
+                <button>&#8744;</button>
+              </div>
+              <div class="sessions-container">
+                <p>1</p>
+              </div>
+            </div>
+          </div>
+          <div class="login-signin-button">
+            <button>Login</button>
+            <button>Sign-Up</button>
+          </div>
+        </div>
       </div>
     </div>
     <script src="popups.js"></script>

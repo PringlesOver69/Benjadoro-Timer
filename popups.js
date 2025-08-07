@@ -5,7 +5,7 @@ const coloredElements = {
         imagePicker: document.querySelector('.popup-image-picker'),
         soundPicker: document.querySelector('.popup-ambient-noise'),
         colorPicker: document.querySelector('.popup-color-picker'),
-        // settingsBtn: "document.querySelector('.popup-settings-container');"
+        settingsBtn: document.querySelector('.popup-settings'),
     },
     navbar: {
         background: document.querySelector('.navbar'),
@@ -73,7 +73,8 @@ radioButtonsColor.forEach((radio) => {
             coloredElements.popups.soundPicker.style.boxShadow = `inset 15px 15px 30px ${shadowColor}, 10px 10px 30px black`;
             coloredElements.popups.colorPicker.style.backgroundColor = newColor;
             coloredElements.popups.colorPicker.style.boxShadow = `inset 15px 15px 30px ${shadowColor}, 10px 10px 30px black`;
-            // coloredElements.popups.settingsBtn.style.backgroundColor = newColor;
+            coloredElements.popups.settingsBtn.style.backgroundColor = newColor;
+            coloredElements.popups.settingsBtn.style.boxShadow = `inset 15px 15px 30px ${shadowColor}, 10px 10px 30px black`;
             // coloredElements.taskUi.style.backgroundColor = newColor;
         }
     });
@@ -83,4 +84,15 @@ radioButtonsColor.forEach((radio) => {
     // Funksjon som åpner vindu for valg av farge
 function colorPickerToggle() {
     colorPickerButton.style.visibility = colorPickerButton.style.visibility === 'hidden'? 'visible' : 'hidden';
+}
+
+
+// Settings popup og funksjonalitet
+
+    // Henter alle elementer
+const settingsButton = document.querySelector('.popup-settings');
+
+    // Funksjon som åpner vindu for innstillinger
+function settingsButtonToggle() {
+    settingsButton.style.visibility = settingsButton.style.visibility === 'hidden'? 'visible' : 'hidden';
 }
