@@ -166,3 +166,140 @@
 .color-6 {
     background-color: #b95946;
 }
+
+
+/* Settingsbutton */
+
+.popup-settings {
+    background-color: rgb(0, 0, 85);
+    height: 270px;
+    width: 500px;
+    position: absolute;
+    bottom: 40px;
+    left: 200px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "a b"
+    "c d";
+    border-radius: 20px;
+    box-shadow: inset 15px 15px 30px navy, 10px 10px 30px black;
+    visibility: hidden;
+}
+
+.timer-setting {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    align-self: center;
+    justify-self: center;
+    flex-direction: column;
+}
+
+.timer-setting p {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons-container button {
+    margin-top: 6px;
+    width: 20px;
+    height: 20px;
+    background-color: #537791;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.20s ease;
+    padding-right: 3px;
+    padding-bottom: 2px;
+}
+
+.buttons-and-timer-container {
+    display: flex;
+}
+
+.timer-container {
+    align-items: center;
+}
+
+.timer-container p {
+    margin-left: 20px;
+    font-size: 50px;
+}
+
+.break-setting {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    align-self: center;
+    justify-self: center;
+    flex-direction: column;
+}
+
+.break-setting p {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+.break-container p {
+    margin-left: 20px;
+    font-size: 50px;
+}
+
+.sessions-setting {
+    height: auto;
+    width: 190px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    align-self: center;
+    justify-self: center;
+    flex-direction: column;
+}
+
+.sessions-setting p {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+.sessions-container p {
+    margin-left: 20px;
+    font-size: 50px;
+}
+
+.sessions-setting button {
+    padding-left: 2px;
+    padding-bottom: 2px;
+}
+
+.login-signin-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-signin-button button {
+    margin-top: 6px;
+    width: 175px;
+    height: 50px;
+    background-color: #537791;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.20s ease;
+    font-size: 20px;
+}
