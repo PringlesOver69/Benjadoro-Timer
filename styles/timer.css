@@ -1,0 +1,56 @@
+.screen-timer {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    height: auto;
+    width: auto;
+}
+
+.screen-timer-contents {
+    display: flex;
+    flex-direction: column;
+}
+
+.screen-timer-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.screen-timer-buttons button {
+    height: 75px;
+    width: 75px;
+    font-size: 25px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+.screen-timer-buttons button:first-child {
+    padding-bottom: 2px;
+    padding-left: 2px;
+}
+
+#pluss-five-button {
+    padding-left: 1px;
+}
+
+.screen-timer-buttons button:last-child {
+    padding-bottom: 3px;
+    padding-right: 1px;
+}
+
+.screen-timer-buttons button:hover {
+    background-color: rgb(231, 231, 231);
+}
+
+.screen-timer-buttons button:active {
+    background-color: rgb(219, 219, 219);
+}
+
+.timer-display {
+    font-size: 200px;
+    font-family: Roboto;
+    color: white;
+    cursor: default;
+}
